@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+    --font-editorial: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f9f8f5;
+    color: #1c1917;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+    letter-spacing: 0.05em;
+  }
+
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+}
+
+/* Custom Luxury Effects for Light Palette */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #8c6714 0%, #b88e28 50%, #73530b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(180, 140, 40, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 4px 25px rgba(180, 140, 40, 0.15);
+}
+
+.subtle-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 222, 213, 0.85);
+}
+
+.subtle-glass-gold {
+  background: rgba(253, 250, 244, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(180, 140, 40, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f3ee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d4c9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b88e28;
+}
+

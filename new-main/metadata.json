@@ -1,0 +1,6 @@
+{
+  "name": "Shantel Variety Shop",
+  "description": "The VIP Experience — Premium pre-order e-commerce boutique for luxury fashion, fine lifestyle curation, and bespoke pre-order collections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
